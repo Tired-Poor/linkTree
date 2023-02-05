@@ -5,16 +5,21 @@ function Home() {
     <div>Take a look around
 
       <section className="links-container">
-        <a href="https://tired-template.netlify.app"><button>
-          Client Template</button></a>
+
+        <a className="btn btn--odd btn--animated" href="https://tired-template.netlify.app">
+          Client Template</a>
           <br />
-        <a href="https://zachpower.onrender.com"><button>
-          Zach Power</button></a>
+
+        <a className="btn btn--even btn--animated" href="https://zachpower.onrender.com">
+          Zach Power</a>
           <br />
-        <a href="https://developedbydrewford.netlify.app"><button>
-          Drew Cook</button></a>
+
+        <a className="btn btn--odd btn--animated" href="https://developedbydrewford.netlify.app">
+          Drew Cook</a>
           <br />
+
       </section>
+      
     </div>
   )
 }

@@ -1,10 +1,155 @@
-* {
-  background-color: black;
-  color: white;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+
+
   text-align: center;
 }
 
-button {
-  background-color: white;
-  color: black;
+html {
+  font-size: 62.5%;
 }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  padding: 3rem;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+
+.links-container {
+  position: relative;
+  border: 5px solid red;
+}
+
+/* .btn {
+
+
+  background-color: #fff;
+  color: #777;
+  text-decoration: none;
+
+} */
+
+/* .btn--odd {
+  animation: moveInLeft 1s ease-out;
+  /* border: 3px solid blue; 
+}
+*/
+/*
+.btn--even {
+  animation: moveInRight 1s ease-out;
+  border: 3px solid blue;
+} */
+
+/* .links-container__odd */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+};
+
+/* .links-container__even */
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+/* .btn */
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #777;
+  margin: 1rem;
+  width: 20rem;
+}
+
+.btn-hover {
+  transform: translateY(-3rem);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.2)
+}
+
+.btn:active {
+  transform: translateY(-1rem)
+}
+
+/* .btn-odd {
+  animation: moveInLeft 1s ease-out;
+} */
+
+/* .btn--even {
+  animation: moveInRight 1s ease-out;
+} */
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn:hover::after {
+  background-color: #fff;
+}
+
+.btn--animated {
+  background-color: #fff;
+  animation: moveInButton .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
