@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 *,
 *::before,
@@ -24,8 +26,10 @@ body {
   color: white;
 }
 
+/* Header Start */
+
 .header {
-  height: 20vh;
+  height: 30vh;
   background-image: linear-gradient(
     to right bottom,
     rgba(95, 67, 255, 0.8),
@@ -64,6 +68,16 @@ body {
   animation: moveInRight 1s ease-out;
 }
 
+@media (max-width: 800px) {
+  .heading-primary--main {
+    font-size: 2.5rem;
+  }
+
+  .heading-primary--sub {
+    font-size: 2rem;
+  }
+}
+
 /* .heading-primary--main */
 @keyframes moveInLeft {
   0% {
@@ -97,6 +111,10 @@ body {
     transform: translate(0);
   }
 }
+
+/* Header End */
+
+/* Buttons Start */
 
 /* .btn */
 @keyframes moveInButton {
@@ -164,3 +182,24 @@ body {
   animation-fill-mode: backwards;
 }
 
+/* Buttons End */
+
+/* Footer Start */
+
+footer {
+  margin-top: 2rem;
+}
+
+#drew-font-one {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#drew-font-two {
+  font-family: 'Berkshire Swash';
+}
+
+#zach-font {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/* Footer End */

@@ -20,6 +20,18 @@ function App() {
       </header>
 
       <Outlet context />
+
+      <footer>
+        <span id="drew-font-one">
+            Developed by </span>
+            <span id="drew-font-two">
+              Drewford</span> 
+              &nbsp; && &nbsp;
+            <span id="zach-font"><b>
+              Zach PowerED</b></span>
+      </footer>
+
+
     </div>
   )
 }
