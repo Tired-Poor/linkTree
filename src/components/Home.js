@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div>Take a look around
+    <div>
 
       <section className="links-container">
 
@@ -10,16 +10,16 @@ function Home() {
           Client Template</a>
           <br />
 
-        <a className="btn btn--even btn--animated" href="https://zachpower.onrender.com">
+        <a className="btn btn--animated" href="https://zachpower.onrender.com">
           Zach Power</a>
           <br />
 
-        <a className="btn btn--odd btn--animated" href="https://developedbydrewford.netlify.app">
+        <a className="btn btn--animated" href="https://developedbydrewford.netlify.app">
           Drew Cook</a>
           <br />
 
       </section>
-      
+
     </div>
   )
 }

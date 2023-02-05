@@ -7,7 +7,6 @@
   padding: 0px;
   box-sizing: inherit;
 
-
   text-align: center;
 }
 
@@ -25,32 +24,47 @@ body {
   color: white;
 }
 
-.links-container {
-  position: relative;
-  border: 5px solid red;
+.header {
+  height: 20vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(95, 67, 255, 0.8),
+    rgba(89, 0, 255, 0.8)),
+    url("https://i.imgur.com/mjunZzX.png");
+    background-size: cover;
+    background-position: top;
+    position: relative;
 }
 
-/* .btn {
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
+.heading-primary {
+  color: #fff;
+  backface-visibility: hidden;
+  /* margin: 3rem; */
+}
 
-  background-color: #fff;
-  color: #777;
-  text-decoration: none;
-
-} */
-
-/* .btn--odd {
+.heading-primary--main {
+  display: block;
+  font-size: 4rem;
+  font-weight: 400;
   animation: moveInLeft 1s ease-out;
-  /* border: 3px solid blue; 
 }
-*/
-/*
-.btn--even {
-  animation: moveInRight 1s ease-out;
-  border: 3px solid blue;
-} */
 
-/* .links-container__odd */
+.heading-primary--sub {
+  display: block;
+  font-size: 3rem;
+  font-weight: 400;
+  animation: moveInRight 1s ease-out;
+}
+
+/* .heading-primary--main */
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -67,7 +81,7 @@ body {
   }
 };
 
-/* .links-container__even */
+/* .heading-primary--sub */
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -97,6 +111,11 @@ body {
   }
 }
 
+.links-container {
+  position: relative;
+  /* border: 5px solid red; */
+  margin-top: 1rem;
+}
 
 .btn:link,
 .btn:visited {
@@ -121,14 +140,6 @@ body {
 .btn:active {
   transform: translateY(-1rem)
 }
-
-/* .btn-odd {
-  animation: moveInLeft 1s ease-out;
-} */
-
-/* .btn--even {
-  animation: moveInRight 1s ease-out;
-} */
 
 .btn::after {
   content: "";
