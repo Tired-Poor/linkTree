@@ -134,6 +134,7 @@ body {
   position: relative;
   /* border: 5px solid red; */
   margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .btn:link,
@@ -147,7 +148,7 @@ body {
   font-size: 1.6rem;
   background-color: #fff;
   color: #777;
-  margin: 1rem;
+  margin: 2.5rem;
   width: 20rem;
 }
 
