@@ -38,6 +38,7 @@ body {
     background-size: cover;
     background-position: top;
     position: relative;
+    border-radius: 2rem;
 }
 
 .header__text-box {
