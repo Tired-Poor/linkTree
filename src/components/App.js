@@ -2,10 +2,28 @@ import React from 'react'
 import { Outlet } from 'react-router-dom';
 
 import './general.css';
+import './background.css';
 
 function App() {
   return (
     <div>
+
+    {/* animated background Start */}
+    <div class="area" >
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div >
+    {/* animated background End*/}
 
       <header className="header">
         <div className="header__text-box">
