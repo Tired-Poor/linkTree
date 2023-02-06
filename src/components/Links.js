@@ -10,7 +10,7 @@ function Links() {
           Client Template</a>
           <br />
 
-        <a className="btn btn--animated" href="https://zachpower.onrender.com">
+        <a className="btn btn--animated" target="_blank" href="https://zachpower.onrender.com">
           Zach Power</a>
           <br />
 
