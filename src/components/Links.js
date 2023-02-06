@@ -7,7 +7,7 @@ function Links() {
       <section className="links-container">
 
         <a className="btn btn--odd btn--animated" target="_blank" href="https://tired-template.netlify.app">
-          Client Templates</a>
+          Client Template</a>
           <br />
 
         <a className="btn btn--animated" target="_blank" href="https://zachpower.onrender.com">
