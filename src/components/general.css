@@ -8,7 +8,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: inherit;
-
   text-align: center;
 }
 
@@ -42,7 +41,7 @@ body {
 
 .header__text-box {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -50,8 +49,6 @@ body {
 
 .heading-primary {
   color: #fff;
-  backface-visibility: hidden;
-  /* margin: 3rem; */
 }
 
 .heading-primary--main {
@@ -59,6 +56,7 @@ body {
   font-size: 4rem;
   font-weight: 400;
   animation: moveInLeft 1s ease-out;
+  margin: 1rem;
 }
 
 .heading-primary--sub {
@@ -66,6 +64,7 @@ body {
   font-size: 3rem;
   font-weight: 400;
   animation: moveInRight 1s ease-out;
+  margin: 1rem;
 }
 
 @media (max-width: 800px) {
@@ -187,7 +186,11 @@ body {
 /* Footer Start */
 
 footer {
-  margin-top: 2rem;
+  /* margin-top: 5rem; */
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #drew-font-one {
