@@ -6,7 +6,7 @@ function Links() {
 
       <section className="links-container">
 
-        <a className="btn btn--odd btn--animated" href="https://tired-template.netlify.app">
+        <a className="btn btn--odd btn--animated" target="_blank" href="https://tired-template.netlify.app">
           Client Template</a>
           <br />
 
@@ -14,7 +14,7 @@ function Links() {
           Zach Power</a>
           <br />
 
-        <a className="btn btn--animated" href="https://developedbydrewford.netlify.app">
+        <a className="btn btn--animated" target="_blank" href="https://developedbydrewford.netlify.app">
           Drew Cook</a>
           <br />
 
